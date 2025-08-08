@@ -1,4 +1,4 @@
-# Cascade Modeling (Code & Derived Artifacts)
+# Two-Stage Machine Learning Framework to Support Early Detection of Severe Febrile Illness in Young Children (Code & Derived Artifacts)
 
 **No raw data is included.**  
 This repository contains code, trained model artifacts (where permitted), derived tables, and an interactive mockup application for a two-stage cascade machine learning model to support the diagnosis of severe febrile illness.
