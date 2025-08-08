@@ -1,0 +1,2 @@
+model_name,feature_set,manual_macro_avg_pr_auc,roc_auc_macro,sens_macro,spec_macro,pr_auc_Non_Severe,pr_auc_Probable_Non_Severe,pr_auc_Probable_Severe,pr_auc_Onset_gt24h,pr_auc_Onset_lt24h,accuracy
+Logistic Regression,Tier 1 Literature,0.264229447421579,0.6612607959235498,0.21365477065464455,0.8062269876034552,0.3028011179520882,0.2643392628402878,0.6397802355235576,0.03312448112771049,0.08110213966425084,0.5432282144700351
