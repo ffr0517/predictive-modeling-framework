@@ -1,0 +1,34 @@
+# --- DAG structure ---
+dag {
+Age
+CRP [exposure]
+Measurement_Variability [latent]
+Procalcitonin [exposure]
+SFI [outcome]
+Single_Centre_Study
+Small_Sample_Size
+Underlying_Infection
+Age -> CRP
+Age -> Procalcitonin
+Age -> SFI
+Age -> Underlying_Infection
+CRP -> SFI
+Measurement_Variability -> CRP
+Measurement_Variability -> Procalcitonin
+Procalcitonin -> SFI
+Single_Centre_Study -> SFI
+Small_Sample_Size -> SFI
+Underlying_Infection -> CRP
+Underlying_Infection -> Procalcitonin
+Underlying_Infection -> SFI
+}
+
+# --- Minimal adjustment set ---
+adjset: Age + Underlying_Infection
+
+# --- Joint formula ---
+SFI ~ CRP + Procalcitonin + Age + Underlying_Infection
+
+# --- Exposure-specific formulas ---
+CRP: SFI ~ CRP + Age + Procalcitonin + Underlying_Infection
+Procalcitonin: SFI ~ Procalcitonin + Age + CRP + Underlying_Infection

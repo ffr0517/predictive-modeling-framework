@@ -1,0 +1,49 @@
+# --- DAG structure ---
+dag {
+Age
+CRP [exposure]
+Lactate [exposure]
+Measurement_Variability [latent]
+NLR [exposure]
+Procalcitonin [exposure]
+SFI [outcome]
+Study_Bias
+Underlying_Infection
+Vital_Signs [exposure]
+Age -> CRP
+Age -> Lactate
+Age -> NLR
+Age -> Procalcitonin
+Age -> SFI
+Age -> Underlying_Infection
+Age -> Vital_Signs
+CRP -> SFI
+Lactate -> SFI
+Measurement_Variability -> CRP
+Measurement_Variability -> Lactate
+Measurement_Variability -> NLR
+Measurement_Variability -> Procalcitonin
+NLR -> SFI
+Procalcitonin -> SFI
+Study_Bias -> SFI
+Underlying_Infection -> CRP
+Underlying_Infection -> Lactate
+Underlying_Infection -> NLR
+Underlying_Infection -> Procalcitonin
+Underlying_Infection -> SFI
+Underlying_Infection -> Vital_Signs
+Vital_Signs -> SFI
+}
+
+# --- Minimal adjustment set ---
+adjset: Age + Underlying_Infection
+
+# --- Joint formula ---
+SFI ~ CRP + Lactate + NLR + Procalcitonin + Vital_Signs + Age +     Underlying_Infection
+
+# --- Exposure-specific formulas ---
+CRP: SFI ~ CRP + Age + Lactate + NLR + Procalcitonin + Underlying_Infection
+Lactate: SFI ~ Lactate + Age + CRP + NLR + Procalcitonin + Underlying_Infection
+NLR: SFI ~ NLR + Age + CRP + Lactate + Procalcitonin + Underlying_Infection
+Procalcitonin: SFI ~ Procalcitonin + Age + CRP + Lactate + NLR + Underlying_Infection
+Vital_Signs: SFI ~ Vital_Signs + Age + Underlying_Infection

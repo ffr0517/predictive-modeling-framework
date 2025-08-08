@@ -1,0 +1,92 @@
+"","Rank","Feature","Mean Importance Score"
+"1",1,"Clinical Site (Overall)",0.0602792319376575
+"2",2,"TNFR1 (pg/ml)",0.0403012788774796
+"3",3,"Haemoglobin (mg/dL)",0.0399742817054803
+"4",4,"Heart Rate (bpm)",0.0385688592868372
+"5",5,"Respiratory Rate (breaths/min)",0.0367699471393354
+"6",6,"Age (Months)",0.033501854067924
+"7",7,"Oxygen Saturation (%)",0.0332836478523769
+"8",8,"Interleukin-6 (pg/ml)",0.0321858067149168
+"9",9,"Missingness Indicator for: SIRS Score",0.0313751458592036
+"10",10,"VEGFR1 (pg/ml)",0.0298287144848981
+"11",11,"suPAR (ng/ml)",0.0284313579341026
+"12",12,"STREM1 (pg/ml)",0.0283316599947389
+"13",13,"SIRS Score",0.0271455028397145
+"14",14,"CHI3L1 (ng/ml)",0.0271027884147832
+"15",15,"Weight for Age Z-Score",0.0265373325153161
+"16",16,"Lactate (mmol/L)",0.0262563195497514
+"17",17,"Procalcitonin",0.0260169755390549
+"18",18,"C-Reactive Protein",0.025804835115616
+"19",19,"Interleukin-8",0.0252841609951078
+"20",20,"Site: National Childrens Hospital, Viet Nam",0.0238026833554166
+"21",21,"Angiopoietin-2",0.0237170477359702
+"22",22,"CXCL10",0.0229530920360817
+"23",23,"Interleukin-1 Receptor Antagonist",0.0219097820023768
+"24",24,"Angiopoietin-1",0.0211534329923722
+"25",25,"Axillary Temperature (celcius)",0.0198621218424484
+"26",26,"Interleukin-10",0.0196554010199299
+"27",27,"WHO Danger Sign",0.0194093779455851
+"28",28,"Upper Respiratory Tract Infection",0.0190709070880292
+"29",29,"Glucose (mmol/L)",0.0185777412125287
+"30",30,"WHO Pneumonia",0.0176073158329776
+"31",31,"Missingness Indicator for: Haemoglobin (mg/dL)",0.0170484913574388
+"32",32,"Site: Angkor Hospital, Cambodia",0.0155292797975037
+"33",33,"Site: Dong Nai Childrens Hospital, Viet Nam",0.0152165298094411
+"34",34,"Duration of Illness (Days)",0.0139719435359611
+"35",35,"Parenteral Treatment Before Enrolment",0.0115575330082142
+"36",36,"Lower Respiratory Tract Infection",0.0097371699300695
+"37",37,"Non-Respiratory Syndrome",0.00884320967825119
+"38",38,"Respiratory Syndrome",0.00774950256854594
+"39",39,"Sought Care Prior to Presentation",0.00663402049383564
+"40",40,"Undifferentiated Febrile Illness",0.00570631736631219
+"41",41,"Missingness Indicator for: Oxygen Saturation (%)",0.00533722915772395
+"42",42,"Travel Time to Study Site",0.00516235099769118
+"43",43,"Neurological Syndrome",0.00459182270590239
+"44",44,"LqSOFA Score",0.00436623038850025
+"45",45,"Convulsions",0.00419715613681045
+"46",46,"Prostration",0.00408374519565545
+"47",47,"Site: Rumah Sakit Umum Daerah Wates, Indonesia",0.00334955571913621
+"48",48,"Intractable Vomiting",0.00305799791859827
+"49",49,"Diarrhoeal Syndrome",0.00303792896774086
+"50",50,"Lethargy",0.00295644196752007
+"51",51,"Sex",0.00265868236107578
+"52",52,"Overnight Hospitalisation (last 6 months)",0.00239934117286019
+"53",53,"Stunting",0.00193980290571025
+"54",54,"WHO Severe Pneumonia",0.00188465077668711
+"55",55,"Site: Salavan Provincial Hospital, Laos",0.00163032272026529
+"56",56,"Wasting",0.00154484017595199
+"57",57,"Capillary Refill Time > 2s",0.000856283123811003
+"58",58,"Site: Savannakhet Provincial Hospital, Laos",0.000328900133671004
+"59",59,"Comorbidity",0.000208758286590235
+"60",60,"Not Alert (AVPU < A)",0.000190528355165867
+"61",61,"Missingness Indicator for: Angiopoietin-1",0.0000482306345416022
+"62",62,"Missingness Indicator for: CHI3L1 (ng/ml)",0.0000444681808498592
+"63",63,"Missingness Indicator for: suPAR (ng/ml)",0.000040132384574038
+"64",64,"Missingness Indicator for: CXCL10",0.0000304552269801055
+"65",65,"Missingness Indicator for: Angiopoietin-2",0.0000285286999794966
+"66",66,"Missingness Indicator for: Interleukin-10",0.0000249694130520332
+"67",67,"Missingness Indicator for: Interleukin-8",0.0000215904028430899
+"68",68,"Missingness Indicator for: Interleukin-1 Receptor Antagonist",0.0000215708544834322
+"69",69,"Missingness Indicator for: TNFR1 (pg/ml)",0.0000205217748664033
+"70",70,"Missingness Indicator for: Interleukin-6 (pg/ml)",0.0000186662800485776
+"71",71,"Missingness Indicator for: Glucose (mmol/L)",0.0000179903977006886
+"72",72,"Missingness Indicator for: Procalcitonin",0.0000177118653611757
+"73",73,"Missingness Indicator for: C-Reactive Protein",0.0000134697021521642
+"74",74,"Missingness Indicator for: Lactate (mmol/L)",0.0000104351699258433
+"75",75,"Missingness Indicator for: VEGFR1 (pg/ml)",0.00000940729683624227
+"76",76,"Missingness Indicator for: STREM1 (pg/ml)",0.00000770318230712993
+"77",77,"Missingness Indicator for: Wasting",0.00000548412221348392
+"78",78,"Missingness Indicator for: Overnight Hospitalisation (last 6 months)",0.00000166869863372937
+"79",79,"Missingness Indicator for: Convulsions",0.00000159069383648795
+"80",80,"Missingness Indicator for: WHO Danger Sign",0.00000088167927828745
+"81",81,"Admission Status",0
+"82",82,"Binary Outcome",0
+"83",83,"Label",0
+"84",84,"Microbiologically Confirmed Infection",0
+"85",85,"Missingness Indicator for: Intractable Vomiting",0
+"86",86,"Missingness Indicator for: Lethargy",0
+"87",87,"Missingness Indicator for: LqSOFA Score",0
+"88",88,"Missingness Indicator for: Respiratory Rate (breaths/min)",0
+"89",89,"Missingness Indicator for: Stunting",0
+"90",90,"Weight (binary)",0
+"91",91,"Weight (five class)",0

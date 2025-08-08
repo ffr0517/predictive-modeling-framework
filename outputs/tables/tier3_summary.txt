@@ -1,0 +1,148 @@
+# --- DAG structure ---
+dag {
+ANC [exposure]
+Age
+BNP_NT_ProBNP [exposure]
+Bilirubin [exposure]
+Birth_Weight
+Breastfeeding
+CBC [exposure]
+CRP [exposure]
+Cytokines
+Endothelial_Activation
+Hypoperfusion
+Hypoxia
+IL6 [exposure]
+Immune_Cell_Infiltration
+Lactate [exposure]
+MPV [exposure]
+Measurement_Variability [latent]
+NGAL [exposure]
+NLR [exposure]
+Plasma_PAI1_Level
+Platelet_Count [exposure]
+Prematurity
+Presepsin [exposure]
+Procalcitonin [exposure]
+Renal_Perfusion
+SFI [outcome]
+STREM1 [exposure]
+Shock
+Study_Bias
+Underlying_Infection
+Vital_Signs [exposure]
+WBC [exposure]
+ANC -> SFI
+Age -> BNP_NT_ProBNP
+Age -> Bilirubin
+Age -> Breastfeeding
+Age -> CBC
+Age -> CRP
+Age -> Cytokines
+Age -> Hypoxia
+Age -> IL6
+Age -> Lactate
+Age -> NGAL
+Age -> Presepsin
+Age -> Procalcitonin
+Age -> SFI
+Age -> STREM1
+Age -> Shock
+Age -> Underlying_Infection
+Age -> Vital_Signs
+BNP_NT_ProBNP -> SFI
+Bilirubin -> SFI
+Birth_Weight -> Underlying_Infection
+Breastfeeding -> Underlying_Infection
+CBC -> ANC
+CBC -> MPV
+CBC -> NLR
+CBC -> Platelet_Count
+CBC -> WBC
+CRP -> SFI
+Cytokines -> Endothelial_Activation
+Cytokines -> Immune_Cell_Infiltration
+Cytokines -> Plasma_PAI1_Level
+Cytokines -> SFI
+Endothelial_Activation -> Hypoperfusion
+Endothelial_Activation -> SFI
+Hypoperfusion -> Renal_Perfusion
+Hypoperfusion -> SFI
+Hypoxia -> SFI
+Hypoxia -> Vital_Signs
+IL6 -> CRP
+IL6 -> SFI
+Immune_Cell_Infiltration -> SFI
+Lactate -> SFI
+MPV -> SFI
+Measurement_Variability -> BNP_NT_ProBNP
+Measurement_Variability -> Bilirubin
+Measurement_Variability -> CBC
+Measurement_Variability -> CRP
+Measurement_Variability -> IL6
+Measurement_Variability -> Lactate
+Measurement_Variability -> NGAL
+Measurement_Variability -> Plasma_PAI1_Level
+Measurement_Variability -> Presepsin
+Measurement_Variability -> Procalcitonin
+Measurement_Variability -> STREM1
+NGAL -> SFI
+NLR -> SFI
+Plasma_PAI1_Level -> SFI
+Platelet_Count -> SFI
+Prematurity -> Birth_Weight
+Prematurity -> Underlying_Infection
+Presepsin -> SFI
+Procalcitonin -> SFI
+Renal_Perfusion -> SFI
+STREM1 -> SFI
+Shock -> Endothelial_Activation
+Shock -> Hypoperfusion
+Shock -> Hypoxia
+Shock -> SFI
+Shock -> Vital_Signs
+Study_Bias -> SFI
+Underlying_Infection -> BNP_NT_ProBNP
+Underlying_Infection -> Bilirubin
+Underlying_Infection -> CBC
+Underlying_Infection -> CRP
+Underlying_Infection -> Cytokines
+Underlying_Infection -> Endothelial_Activation
+Underlying_Infection -> Hypoxia
+Underlying_Infection -> IL6
+Underlying_Infection -> Immune_Cell_Infiltration
+Underlying_Infection -> Lactate
+Underlying_Infection -> NGAL
+Underlying_Infection -> Plasma_PAI1_Level
+Underlying_Infection -> Presepsin
+Underlying_Infection -> Procalcitonin
+Underlying_Infection -> SFI
+Underlying_Infection -> STREM1
+Underlying_Infection -> Shock
+Underlying_Infection -> Vital_Signs
+Vital_Signs -> SFI
+WBC -> SFI
+}
+
+# --- Minimal adjustment set ---
+adjset: Age + Cytokines + Hypoxia + Plasma_PAI1_Level + Shock + Underlying_Infection
+
+# --- Joint formula ---
+SFI ~ ANC + BNP_NT_ProBNP + Bilirubin + CBC + CRP + IL6 + Lactate +     MPV + NGAL + NLR + Platelet_Count + Presepsin + Procalcitonin +     STREM1 + Vital_Signs + WBC + Age + Cytokines + Hypoxia +     Plasma_PAI1_Level + Shock + Underlying_Infection
+
+# --- Exposure-specific formulas ---
+ANC: SFI ~ ANC + CBC
+BNP_NT_ProBNP: SFI ~ BNP_NT_ProBNP + Age + Bilirubin + CBC + CRP + Cytokines +     IL6 + Lactate + NGAL + Plasma_PAI1_Level + Presepsin + Procalcitonin +     STREM1 + Underlying_Infection
+Bilirubin: SFI ~ Bilirubin + Age + BNP_NT_ProBNP + CBC + CRP + Cytokines +     IL6 + Lactate + NGAL + Plasma_PAI1_Level + Presepsin + Procalcitonin +     STREM1 + Underlying_Infection
+CBC: SFI ~ CBC + Age + BNP_NT_ProBNP + Bilirubin + CRP + Cytokines +     IL6 + Lactate + NGAL + Plasma_PAI1_Level + Presepsin + Procalcitonin +     STREM1 + Underlying_Infection
+CRP: SFI ~ CRP + Age + BNP_NT_ProBNP + Bilirubin + CBC + Cytokines +     IL6 + Lactate + NGAL + Plasma_PAI1_Level + Presepsin + Procalcitonin +     STREM1 + Underlying_Infection
+Lactate: SFI ~ Lactate + Age + BNP_NT_ProBNP + Bilirubin + CBC + CRP +     Cytokines + IL6 + NGAL + Plasma_PAI1_Level + Presepsin +     Procalcitonin + STREM1 + Underlying_Infection
+MPV: SFI ~ MPV + CBC
+NGAL: SFI ~ NGAL + Age + BNP_NT_ProBNP + Bilirubin + CBC + CRP + Cytokines +     IL6 + Lactate + Plasma_PAI1_Level + Presepsin + Procalcitonin +     STREM1 + Underlying_Infection
+NLR: SFI ~ NLR + CBC
+Platelet_Count: SFI ~ Platelet_Count + CBC
+Presepsin: SFI ~ Presepsin + Age + BNP_NT_ProBNP + Bilirubin + CBC + CRP +     Cytokines + IL6 + Lactate + NGAL + Plasma_PAI1_Level + Procalcitonin +     STREM1 + Underlying_Infection
+Procalcitonin: SFI ~ Procalcitonin + Age + BNP_NT_ProBNP + Bilirubin + CBC +     CRP + Cytokines + IL6 + Lactate + NGAL + Plasma_PAI1_Level +     Presepsin + STREM1 + Underlying_Infection
+STREM1: SFI ~ STREM1 + Age + BNP_NT_ProBNP + Bilirubin + CBC + CRP +     Cytokines + IL6 + Lactate + NGAL + Plasma_PAI1_Level + Presepsin +     Procalcitonin + Underlying_Infection
+Vital_Signs: SFI ~ Vital_Signs + Age + Hypoxia + Shock + Underlying_Infection
+WBC: SFI ~ WBC + CBC

@@ -1,0 +1,454 @@
+"","variable_std","var_category","exposure","mediator","unobserved_bias","outcome","total_mentions","raw_synonyms","match_sources_used","total_mentions_in_roles","perc_exposure","perc_mediator","perc_unobserved_bias"
+"1","crp","lab_biomarker",53,0,1,1,55,"Admission hsCRP; Biomarkers of iron status (sTfR, hepcidin, leptin, ferritin, CRP, DHEAS); CRP; CRP >100-mg/L; CRP 6h; CRP-to-albumin ratio (CAR); CRP/albumin ratio tertiles; Fever, CRP, WBC, band count; First CRP measurement at 6-8-h; IL-6, IL-10, IL-6/IL-10 ratio, CRP; LCR (lymphocyte count / CRP); Physiologic CRP rise; Plasma biomarkers: Ang-1, Ang-2, sFlt-1, CHI3L1, CRP, IP-10, IL-6, IL-8, IL-10, IL-1ra, PCT, sTNFR-1, sTREM-1, suPAR; Plasma protein panel (e.g., LCN2, CRP, IL6); Salivary CRP concentration; Serial PCT, CRP; Serum CRP 10mg/L; Serum CRP, TNF, IL6, IL1; hsCRP","final manual patch; manual_regex",55,34.1935483870968,0,0.645161290322581
+"2","single_center_study","study_bias",0,0,47,0,47,"single centre; Single centre; Single country; Single hospital; single setting; single site; Single site; single-centre; Single-centre; Singlecentre; singlecentre LMIC context","manual_regex",47,0,0,30.3225806451613
+"3","mortality","outcome",0,0,0,46,46,"28day mortality; 30-day all-cause mortality; 30-day all-cause mortality in neonates; 7day mortality; Allcause mortality 59days; Complicated course / mortality; Composite of death or vital-organ support within 48h; death; ICU mortality; in-hospital and 6-month mortality; In-hospital mortality; inhospital mortality; Inhospital mortality; morbidity/mortality; mortality; Mortality; mortality or sequelae; Mortality phenotypes; PICU mortality; Progression to septic shock and/or death within 7-days","manual_regex",46,0,0,0
+"4","procalcitonin","lab_biomarker",35,0,1,0,36,"Admission PCT; Blood PCT; Cord blood procalcitonin concentration; Cord PCT; infant PCT; PCT; Pointofcare PCT level; Postoperative PCT; procalcitonin; Procalcitonintoalbumin ratio; Serum PCT at 6 h; Serum procalcitonin; Subset PCT availability; WBC 2500, ANC 1000, PCT","manual_regex",36,22.5806451612903,0,0.645161290322581
+"5","small_sample_size","study_bias",0,0,31,0,31,"Few EOS cases; limited sample size; Limited size; small cohort; Small cohort; small number of IBIs; small sample; Small sample; small SBI count; small SBI numbers; small size; Sample size","final manual patch; manual_regex",31,0,0,20
+"6","measurement_variability","measurement_bias",0,0,25,0,25,"assay variability; Assay variability; device measurement variation; endemic variability; Imaging confirmation variability; imaging variability; measurementtiming variability; missing variables; Missing variables; Observer variability in radiograph reading; Operator variability of ultrasound; preTTM variability; sequencing variability; Technical variability; timing variability; variability in CSF; Variable assay timing; Variable cutoffs; variable outcome definitions; Variable reference standards","final manual patch",25,0,0,16.1290322580645
+"7","age","demographic",17,1,1,2,21,"age; Age; Age 90days; age matching; Average temperature first 24h; Development of NEC (Bell stage 2); gestational age; Gestational age; Lipid metabolism damage; NEC severity (Bell stage); Serial sRAGE levels; Serum soluble RAGE concentration","manual_regex",21,10.9677419354839,0.645161290322581,0.645161290322581
+"8","neonatal_sepsis","clinical_condition",0,0,0,12,12,"Neonatal sepsis (clinical  culture); Neonatal sepsis (cultureproven and suspected); Neonatal sepsis (overall and culturepositive); Neonatal sepsis and severe sepsis status; Neonatal sepsis diagnosis; Occurrence of neonatal sepsis; Presence and severity of neonatal sepsis; Presence of neonatal sepsis","final manual patch",12,0,0,0
+"9","pneumonia","clinical_condition",1,0,0,10,11,"Bacterial vs viral pneumonia; complicated pneumonia; Etiologic class (bacterial vs viral vs malarial pneumonia); pneumonia; Pneumonia with consolidation; Radiographic pneumonia on chest Xray; Severe or complicated CAP; WHO severe RSV communityacquired pneumonia","auto_keyword; final manual patch",11,0.645161290322581,0,0
+"10","culture_confirmed_neonatal_sepsis","clinical_condition",0,0,0,10,10,"Culture-confirmed early-onset neonatal sepsis (-72-h); Culture-positive late-onset sepsis workup; Culture-proven neonatal sepsis; Cultureconfirmed bacteremic sepsis (early vs late onset); Cultureconfirmed neonatal sepsis; Culturepositive earlyonset sepsis; culturepositive sepsis; Culturepositive sepsis; Cultureproven neonatal bacterial sepsis","final manual patch",10,0,0,0
+"11","early_onset_neonatal_sepsis","clinical_condition",0,0,0,10,10,"Clinical early-onset neonatal sepsis (cEONS); Clinical earlyonset neonatal sepsis; Early-onset neonatal sepsis; Earlyonset neonatal sepsis; Earlyonset neonatal sepsis diagnosis","final manual patch",10,0,0,0
+"12","none_reported","study_bias",0,10,0,0,10,"None","final manual patch",10,0,6.45161290322581,0
+"13","selection_bias","study_bias",0,0,10,0,10,"Residual confounding, selection bias; selection bias; Selection bias; Selection bias (NICU population)","manual_regex",10,0,0,6.45161290322581
+"14","lactate","lab_biomarker",9,0,0,0,9,"6h lactate clearance (%); Admission serum lactate; Admission serum lactate level; blood lactate; lactate","auto_keyword; final manual patch",9,5.80645161290323,0,0
+"15","retrospective_data","imaging",0,0,9,0,9,"retrospective data; Retrospective data","auto_keyword",9,0,0,5.80645161290323
+"16","nlr","lab_biomarker",8,0,0,0,8,"Admission NLR strata; Admission NLR, PLR, systemic immune-inflammatory index, WBC; Neutrophiltolymphocyte ratio; NLR; NLR 5","auto_keyword; final manual patch",8,5.16129032258065,0,0
+"17","vital_signs","clinical_sign",8,0,0,0,8,"Clinical sign checklists; clinical signs; Clinical signs; other clinical signs; vital signs; vitals","manual_regex",8,5.16129032258065,0,0
+"18","shock","clinical_condition",3,0,0,4,7,"Acute circulatory failure; KD shock syndrome vs typical KD; Sepsis or septic shock; septic shock; Septic shock vs no shock within 24h","final manual patch; manual_regex",7,1.93548387096774,0,0
+"19","wbc","lab_biomarker",7,0,0,0,7,"WBC; WBC 6h","auto_keyword; final manual patch",7,4.51612903225806,0,0
+"20","batch_effects","imaging",0,0,6,0,6,"batch effects; Batch effects","auto_keyword",6,0,0,3.87096774193548
+"21","cytokine_general","lab_biomarker",3,2,0,1,6,"cytokine panel; cytokine responses; Cytokine storm; Inflammatory cytokines; other cytokines (TNF, IL1, IL10, CXCL9); Serum cytokine panel (eg, haptoglobin, sFasL, C2)","manual_regex",6,1.93548387096774,1.29032258064516,0
+"22","early_onset_sepsis","clinical_condition",2,0,0,4,6,"Earlyonset sepsis diagnosis; Earlyonset sepsis in preterm infants; earlyonset sepsis; Earlyonset sepsis","final manual patch",6,1.29032258064516,0,0
+"23","retrospective","imaging",0,0,6,0,6,"retrospective; Retrospective","auto_keyword",6,0,0,3.87096774193548
+"24","retrospective_design","imaging",0,0,6,0,6,"retrospective design; Retrospective design","auto_keyword",6,0,0,3.87096774193548
+"25","bnp_ntprobnp","lab_biomarker",5,0,0,0,5,"13 clinical variables incl. coma score, BNP; BNP; NTproBNP; NTproBNP level; Plasma BNP level","manual_regex",5,3.2258064516129,0,0
+"26","cbc_indices","lab_biomarker",5,0,0,0,5,"CBC indices; hemogram indices; Hemogram indices","manual_regex",5,3.2258064516129,0,0
+"27","length_of_stay","outcome",0,0,0,5,5,"28day mortality (overall, EOS, LOS subgroup); length of stay; Mortality in LOS","manual_regex",5,0,0,0
+"28","malaria_infection","clinical_condition",0,0,0,5,5,"Disease class (malaria vs bacteremia); Incident malaria episodes over 6months; Malaria infection; Malaria recurrence over 6-months; Malaria vs bacterial BSI classification","auto_keyword; final manual patch",5,0,0,0
+"29","platelet_count","lab_biomarker",5,0,0,0,5,"platelet count; PLT; PLT 6h","auto_keyword; final manual patch",5,3.2258064516129,0,0
+"30","residual_confounding","study_bias",0,0,5,0,5,"residual confounding; Residual confounding","auto_keyword",5,0,0,3.2258064516129
+"31","assay_cost","measurement_bias",0,0,4,0,4,"assay cost; Assay cost","auto_keyword",4,0,0,2.58064516129032
+"32","biomarker_timing","measurement_bias",0,0,4,0,4,"biomarker timing","final manual patch",4,0,0,2.58064516129032
+"33","hypoxia","clinical_sign",4,0,0,0,4,"hypoxia","manual_override_raw_clean",4,2.58064516129032,0,0
+"34","lab_panel_general","lab_biomarker_general",3,0,1,0,4,"biomarkers; biomarkers only at admission; labs","final manual patch",4,1.93548387096774,0,0.645161290322581
+"35","plasma_strem1","lab_biomarker",4,0,0,0,4,"Admission plasma sTREM1; Plasma sTREM-1 level on diagnosis; Plasma sTREM1; sTREM1","auto_keyword; final manual patch",4,2.58064516129032,0,0
+"36","presepsin","lab_biomarker",4,0,0,0,4,"Admission presepsin level; Cord and peripheral presepsin; Cord presepsin level; Plasma presepsin","final manual patch",4,2.58064516129032,0,0
+"37","sepsis_development","clinical_condition",0,0,0,4,4,"Development of sepsis; progression to sepsis; Sepsis development","auto_keyword; final manual patch",4,0,0,0
+"38","aki","clinical_condition",0,0,0,3,3,"Acute kidney injury; KDIGO stage2/3 AKI by day3","manual_regex",3,0,0,0
+"39","anc","lab_biomarker",3,0,0,0,3,"ANC","manual_override_raw_clean",3,1.93548387096774,0,0
+"40","bilirubin","lab_biomarker",3,0,0,0,3,"conjugated bilirubin; Serum total bilirubin 12.8mol/L; total bilirubin","manual_regex",3,1.93548387096774,0,0
+"41","birth_weight","clinical_sign",3,0,0,0,3,"birth weight; Birth weight","final manual patch",3,1.93548387096774,0,0
+"42","breastfeeding","nutrition",3,0,0,0,3,"breastfeeding","final manual patch",3,1.93548387096774,0,0
+"43","culture_sensitivity","microbiology_test",0,0,3,0,3,"culture sensitivity; Culture sensitivity","auto_keyword",3,0,0,1.93548387096774
+"44","fabp","lab_biomarker",2,1,0,0,3,"First-day urinary L-FABP; I-FABP; plasma I-FABP","manual_regex",3,1.29032258064516,0.645161290322581,0
+"45","heterogeneity","study_bias",0,0,3,0,3,"case-mix differences; heterogeneity","auto_keyword; final manual patch",3,0,0,1.93548387096774
+"46","il6","lab_biomarker",3,0,0,0,3,"IL-6; IL6","auto_keyword; final manual patch",3,1.93548387096774,0,0
+"47","measurement_error","measurement_bias",0,0,3,0,3,"measurement error","manual_override_raw_clean",3,0,0,1.93548387096774
+"48","mechanical_ventilation","outcome",3,0,0,0,3,"invasive mechanical ventilation; mechanical ventilation; MV within 24h","auto_keyword; final manual patch",3,1.93548387096774,0,0
+"49","mpv","lab_biomarker",3,0,0,0,3,"MPV; MPV at admission and 72h","auto_keyword; final manual patch",3,1.93548387096774,0,0
+"50","ngal","lab_biomarker",3,0,0,0,3,"Plasma NGAL; urine NGAL","final manual patch",3,1.93548387096774,0,0
+"51","plasma_pai_1_level","lab_biomarker",1,2,0,0,3,"PAI-1 as mediator of coagulopathy (discussed); plasma PAI-1 level","final manual patch",3,0.645161290322581,1.29032258064516,0
+"52","poor_outcome","outcome",0,0,0,3,3,"Poor clinical outcome (GOS14); Poor neurological outcome postTTM; poor prognosis","manual_regex",3,0,0,0
+"53","prematurity","demographic",3,0,0,0,3,"prematurity; Prematurity","auto_keyword",3,1.93548387096774,0,0
+"54","publication_bias","study_bias",0,0,3,0,3,"Publication bias","auto_keyword",3,0,0,1.93548387096774
+"55","sepsis_among_neonates_with_pneumonia","clinical_condition",0,0,0,3,3,"Sepsis among neonates with pneumonia","auto_keyword",3,0,0,0
+"56","spectrum_bias","study_bias",0,0,3,0,3,"Spectrum bias","auto_keyword",3,0,0,1.93548387096774
+"57","albumin","lab_biomarker",2,0,0,0,2,"albumin","auto_keyword",2,1.29032258064516,0,0
+"58","altered_consciousness","clinical_sign",2,0,0,0,2,"altered consciousness","manual_override_raw_clean",2,1.29032258064516,0,0
+"59","apgar_score","clinical_sign",2,0,0,0,2,"Apgar score (5min); Apgar1min","manual_regex",2,1.29032258064516,0,0
+"60","bun","lab_biomarker",2,0,0,0,2,"Blood urea nitrogen tertiles; BUN","manual_regex",2,1.29032258064516,0,0
+"61","burn_etiology","clinical_condition",2,0,0,0,2,"burn etiology","manual_override_raw_clean",2,1.29032258064516,0,0
+"62","burn_size","clinical_sign",2,0,0,0,2,"Burn size (TBS, DBA, DSI)","final manual patch",2,1.29032258064516,0,0
+"63","central_line","treatment",2,0,0,0,2,"central line","manual_regex",2,1.29032258064516,0,0
+"64","cesarean_delivery","demographic",2,0,0,0,2,"cesarean delivery","auto_keyword",2,1.29032258064516,0,0
+"65","confounding_by_healthcare_access","study_bias",0,0,2,0,2,"Confounding by healthcare access","final manual patch",2,0,0,1.29032258064516
+"66","culture_yield","microbiology_test",0,0,2,0,2,"Culture yield","auto_keyword",2,0,0,1.29032258064516
+"67","ddimer","lab_biomarker",2,0,0,0,2,"Ddimer","auto_keyword",2,1.29032258064516,0,0
+"68","development_of_nards_during_admission","clinical_condition",0,0,0,2,2,"Development of NARDS during admission","auto_keyword",2,0,0,0
+"69","egfr","lab_biomarker",2,0,0,0,2,"eGFR","auto_keyword",2,1.29032258064516,0,0
+"70","endothelial_activation_mediating_infection_severity","outcome",0,2,0,0,2,"Endothelial activation mediating infection severity","auto_keyword",2,0,1.29032258064516,0
+"71","eos_risk_score","clinical_sign",2,0,0,0,2,"EOS risk calculator score","final manual patch",2,1.29032258064516,0,0
+"72","fever_height","clinical_sign",2,0,0,0,2,"fever height","auto_keyword",2,1.29032258064516,0,0
+"73","hbp","lab_biomarker",2,0,0,0,2,"Admission plasma HBP; Serum HBP quartiles","final manual patch",2,1.29032258064516,0,0
+"74","host_immune_response_pathways","molecular_omics",0,2,0,0,2,"Host immune response pathways","manual_override_raw_clean",2,0,1.29032258064516,0
+"75","household_crowding","demographic",2,0,0,0,2,"household crowding","manual_override_raw_clean",2,1.29032258064516,0,0
+"76","hypoperfusion","clinical_sign",0,2,0,0,2,"Hypoperfusion","auto_keyword",2,0,1.29032258064516,0
+"77","icu_admission","outcome",0,0,0,2,2,"ICU admission","final manual patch",2,0,0,0
+"78","il8","lab_biomarker",2,0,0,0,2,"Admission plasma IL8; IL-8 levels","final manual patch",2,1.29032258064516,0,0
+"79","immune_cell_infiltration","derived_ratio",0,2,0,0,2,"Immune cell infiltration","auto_keyword",2,0,1.29032258064516,0
+"80","inclusion_criteria","study_bias",0,0,2,0,2,"inclusion criteria","final manual patch",2,0,0,1.29032258064516
+"81","incomplete_data","study_bias",0,0,2,0,2,"incomplete records; partial data","manual_regex",2,0,0,1.29032258064516
+"82","inflammatory_response_burns","clinical_sign",0,2,0,0,2,"Inflammatory response to burns","final manual patch",2,0,1.29032258064516,0
+"83","invasive_procedures","treatment",2,0,0,0,2,"invasive procedures","auto_keyword",2,1.29032258064516,0,0
+"84","labs","lab_biomarker",2,0,0,0,2,"labs","final manual patch",2,1.29032258064516,0,0
+"85","limited_external_validity","study_bias",0,0,2,0,2,"limited external validity; no external validation","manual_regex",2,0,0,1.29032258064516
+"86","limited_power","study_bias",0,0,2,0,2,"limited power; Limited power","auto_keyword",2,0,0,1.29032258064516
+"87","maternal_factors","demographic",1,0,1,0,2,"maternal factors","auto_keyword",2,0.645161290322581,0,0.645161290322581
+"88","maternal_steroids","treatment",2,0,0,0,2,"maternal steroids","auto_keyword",2,1.29032258064516,0,0
+"89","measurement_bias_of_biomarkers","measurement_bias",0,0,2,0,2,"Measurement bias of biomarkers","final manual patch",2,0,0,1.29032258064516
+"90","micronutrient_supplementation","nutrition",2,0,0,0,2,"micronutrient supplementation","manual_override_raw_clean",2,1.29032258064516,0,0
+"91","misclassification_of_etiology","study_bias",0,0,2,0,2,"Misclassification of etiology","auto_keyword",2,0,0,1.29032258064516
+"92","missing_biomarkers","measurement_bias",0,0,2,0,2,"missing biomarkers","final manual patch",2,0,0,1.29032258064516
+"93","mods","clinical_condition",0,0,0,2,2,"MODS","auto_keyword",2,0,0,0
+"94","plr","lab_biomarker",2,0,0,0,2,"platelet, neutrophil and lymphocyte counts; PLR","auto_keyword; final manual patch",2,1.29032258064516,0,0
+"95","poor_feeding","nutrition",2,0,0,0,2,"poor feeding","auto_keyword",2,1.29032258064516,0,0
+"96","protein_panel_56","molecular_omics",2,0,0,0,2,"56 plasma protein biomarkers","final manual patch",2,1.29032258064516,0,0
+"97","psp_levels","lab_biomarker",2,0,0,0,2,"PSP levels","manual_override_raw_clean",2,1.29032258064516,0,0
+"98","rdw","lab_biomarker",2,0,0,0,2,"RDW","auto_keyword",2,1.29032258064516,0,0
+"99","renal_perfusion","imaging",0,2,0,0,2,"Renal perfusion","manual_override_raw_clean",2,0,1.29032258064516,0
+"100","renal_resistive_index","imaging",2,0,0,0,2,"Early renal resistive index","final manual patch",2,1.29032258064516,0,0
+"101","residence_type","demographic",2,0,0,0,2,"Rural residence; Urban residence","manual_regex",2,1.29032258064516,0,0
+"102","retrospective_data_quality","study_bias",0,0,2,0,2,"retrospective data quality","auto_keyword",2,0,0,1.29032258064516
+"103","season","demographic",2,0,0,0,2,"season","final manual patch",2,1.29032258064516,0,0
+"104","serious_bacterial_infection","imaging",0,0,0,2,2,"Serious bacterial infection","auto_keyword",2,0,0,0
+"105","sex","demographic",2,0,0,0,2,"Sex","manual_regex",2,1.29032258064516,0,0
+"106","term_birth","demographic",2,0,0,0,2,"term birth","manual_override_raw_clean",2,1.29032258064516,0,0
+"107","thrombomodulin","lab_biomarker",1,1,0,0,2,"Thrombomodulin level; thrombomodulin, TAT","manual_regex",2,0.645161290322581,0.645161290322581,0
+"108","viral_testing","microbiology_test",2,0,0,0,2,"viral testing","auto_keyword",2,1.29032258064516,0,0
+"109","vitamin_d","lab_biomarker",1,0,1,0,2,"Vitamin D seasonality; vitaminD level","manual_regex",2,0.645161290322581,0,0.645161290322581
+"110","who_danger_signs","clinical_sign",2,0,0,0,2,"WHO danger signs","manual_override_raw_clean",2,1.29032258064516,0,0
+"111","4_anticonvulsants","treatment",1,0,0,0,1,"4 anticonvulsants","auto_keyword",1,0.645161290322581,0,0
+"112","acidosis_markers","molecular_omics",1,0,0,0,1,"acidosis markers","auto_keyword",1,0.645161290322581,0,0
+"113","acute_pyelonephritis_vs_lower_uti","clinical_condition",0,0,0,1,1,"Acute pyelonephritis vs lower UTI","auto_keyword",1,0,0,0
+"114","admission_bias","study_bias",0,0,1,0,1,"Admission bias","auto_keyword",1,0,0,0.645161290322581
+"115","admission_serum_resistin","lab_biomarker",1,0,0,0,1,"Admission serum resistin","auto_keyword",1,0.645161290322581,0,0
+"116","admission_time_block","demographic",1,0,0,0,1,"Admission time block","final manual patch",1,0.645161290322581,0,0
+"117","alt","lab_biomarker",1,0,0,0,1,"ALT","manual_override_raw_clean",1,0.645161290322581,0,0
+"118","amputations_skin_grafts","treatment",0,0,0,1,1,"amputations/skin grafts","manual_override_raw_clean",1,0,0,0
+"119","anaemia","clinical_condition",0,0,0,1,1,"anaemia","manual_override_raw_clean",1,0,0,0
+"120","antibiotic_duration","treatment",0,0,0,1,1,"Antibiotic duration","auto_keyword",1,0,0,0
+"121","antibiotic_prophylaxis_practices","treatment",0,0,1,0,1,"antibiotic prophylaxis practices","auto_keyword",1,0,0,0.645161290322581
+"122","antibiotic_therapy_first_72_h","treatment",0,0,0,1,1,"Antibiotic therapy first 72-h","auto_keyword",1,0,0,0
+"123","antiviral_host_response","microbiology_test",0,1,0,0,1,"Antiviral host response","auto_keyword",1,0,0.645161290322581,0
+"124","apnea","clinical_sign",1,0,0,0,1,"apnea","auto_keyword",1,0.645161290322581,0,0
+"125","ari","clinical_condition",0,0,0,1,1,"ARI","manual_override_raw_clean",1,0,0,0
+"126","assay_availability","study_bias",0,0,1,0,1,"Assay availability","auto_keyword",1,0,0,0.645161290322581
+"127","assay_complexity","measurement_bias",0,0,1,0,1,"assay complexity","auto_keyword",1,0,0,0.645161290322581
+"128","assay_interference","measurement_bias",0,0,1,0,1,"Assay interference","auto_keyword",1,0,0,0.645161290322581
+"129","assay_limitations","study_bias",0,0,1,0,1,"assay limitations","auto_keyword",1,0,0,0.645161290322581
+"130","assay_timing","measurement_bias",0,0,1,0,1,"assay timing","auto_keyword",1,0,0,0.645161290322581
+"131","ast_73iu_l","lab_biomarker",1,0,0,0,1,"AST 73IU/L","auto_keyword",1,0.645161290322581,0,0
+"132","asthma_history","clinical_condition",1,0,0,0,1,"asthma history","final manual patch",1,0.645161290322581,0,0
+"133","baseline_serum_il6_il10_gcsf_mcp1_ifn","lab_biomarker",1,0,0,0,1,"Baseline serum IL6, IL10, GCSF, MCP1, IFN","auto_keyword",1,0.645161290322581,0,0
+"134","basic_lab_panel","lab_biomarker_general",1,0,0,0,1,"Admission lab biomarkers (haemoglobin, prothrombin time, routine biochemistry)","final manual patch",1,0.645161290322581,0,0
+"135","batch_correction_issues","imaging",0,0,1,0,1,"Batch correction issues","auto_keyword",1,0,0,0.645161290322581
+"136","batch_effects_across_datasets","study_bias",0,0,1,0,1,"Batch effects across datasets","auto_keyword",1,0,0,0.645161290322581
+"137","biomarker_assay_variability","measurement_bias",0,0,1,0,1,"biomarker assay variability","final manual patch",1,0,0,0.645161290322581
+"138","biomarker_timing_variability","measurement_bias",0,0,1,0,1,"Biomarker timing variability","final manual patch",1,0,0,0.645161290322581
+"139","birth_order","demographic",1,0,0,0,1,"birth order","manual_override_raw_clean",1,0.645161290322581,0,0
+"140","blantyre_coma_score","clinical_sign",1,0,0,0,1,"Blantyre Coma Score","auto_keyword",1,0.645161290322581,0,0
+"141","blood_culture_positivity","microbiology_test",0,0,0,1,1,"Blood culture positivity","auto_keyword",1,0,0,0
+"142","blood_gas_biochem_panel","lab_biomarker_general",1,0,0,0,1,"pH, lactate, glucose, AST/ALT, protein","final manual patch",1,0.645161290322581,0,0
+"143","bloodstream_infection_status","imaging",1,0,0,0,1,"Bloodstream infection status","auto_keyword",1,0.645161290322581,0,0
+"144","bradycardia","clinical_sign",1,0,0,0,1,"bradycardia","manual_override_raw_clean",1,0.645161290322581,0,0
+"145","ca_6h","lab_biomarker",1,0,0,0,1,"Ca 6h","manual_override_raw_clean",1,0.645161290322581,0,0
+"146","caas","lab_biomarker",0,0,0,1,1,"CAAs","manual_override_raw_clean",1,0,0,0
+"147","caregiver_education","demographic",1,0,0,0,1,"caregiver education","manual_override_raw_clean",1,0.645161290322581,0,0
+"148","case_fatality_cerebral_malaria","outcome",0,0,0,1,1,"Case fatality in cerebral malaria","final manual patch",1,0,0,0
+"149","cd27","molecular_omics",1,0,0,0,1,"CD27","manual_override_raw_clean",1,0.645161290322581,0,0
+"150","cd45ro","molecular_omics",1,0,0,0,1,"CD45RO","manual_override_raw_clean",1,0.645161290322581,0,0
+"151","circadian_confounding","study_bias",0,0,1,0,1,"circadian confounding","auto_keyword",1,0,0,0.645161290322581
+"152","circulating_micrornas","molecular_omics",1,0,0,0,1,"circulating microRNAs","auto_keyword",1,0.645161290322581,0,0
+"153","clabsi_occurrence","clinical_condition",0,0,0,1,1,"CLABSI occurrence","auto_keyword",1,0,0,0
+"154","clinical_diagnoses","clinical_condition",1,0,0,0,1,"clinical diagnoses","final manual patch",1,0.645161290322581,0,0
+"155","clinical_lab_variables_panel_16","lab_biomarker_general",1,0,0,0,1,"16 clinical/lab variables (e.g., LDH, CKMB, glucose, vomiting)","final manual patch",1,0.645161290322581,0,0
+"156","clinical_severity_score","outcome",1,0,0,0,1,"clinical severity score","auto_keyword",1,0.645161290322581,0,0
+"157","comorbidity","clinical_condition",1,0,0,0,1,"comorbidity","manual_override_raw_clean",1,0.645161290322581,0,0
+"158","concomitant_bacteremic_uti","clinical_condition",0,0,0,1,1,"Concomitant bacteremic UTI","auto_keyword",1,0,0,0
+"159","confounding","study_bias",0,0,1,0,1,"confounding","auto_keyword",1,0,0,0.645161290322581
+"160","confounding_by_surgery_complexity","study_bias",0,0,1,0,1,"Confounding by surgery complexity","auto_keyword",1,0,0,0.645161290322581
+"161","control_heterogeneity","study_bias",0,0,1,0,1,"Control heterogeneity","auto_keyword",1,0,0,0.645161290322581
+"162","control_selection","study_bias",0,0,1,0,1,"control selection","auto_keyword",1,0,0,0.645161290322581
+"163","controls_missing","study_bias",0,0,1,0,1,"controls missing","auto_keyword",1,0,0,0.645161290322581
+"164","convenience_sampling","study_bias",0,0,1,0,1,"Convenience sampling","manual_override_raw_clean",1,0,0,0.645161290322581
+"165","cord_blood_il6_concentration","lab_biomarker",1,0,0,0,1,"Cord blood IL6 concentration","auto_keyword",1,0.645161290322581,0,0
+"166","cord_blood_presepsin_level","lab_biomarker",1,0,0,0,1,"Cord blood presepsin level","auto_keyword",1,0.645161290322581,0,0
+"167","cord_il18","lab_biomarker",1,0,0,0,1,"Cord IL18","auto_keyword",1,0.645161290322581,0,0
+"168","costeffectiveness","imaging",0,0,0,1,1,"costeffectiveness","auto_keyword",1,0,0,0
+"169","cpr","derived_ratio",1,0,0,0,1,"C-reactive protein to platelet ratio (CPR)","manual_regex",1,0.645161290322581,0,0
+"170","creatinine","lab_biomarker",1,0,0,0,1,"creatinine","manual_override_raw_clean",1,0.645161290322581,0,0
+"171","crosssectional_design","imaging",0,0,1,0,1,"crosssectional design","auto_keyword",1,0,0,0.645161290322581
+"172","csf_glucose","lab_biomarker",1,0,0,0,1,"CSF glucose","manual_override_raw_clean",1,0.645161290322581,0,0
+"173","csf_protein_2_g_l","lab_biomarker",1,0,0,0,1,"CSF protein >2-g/L","auto_keyword",1,0.645161290322581,0,0
+"174","csf_protein_concentration","lab_biomarker",1,0,0,0,1,"CSF protein concentration","auto_keyword",1,0.645161290322581,0,0
+"175","culture_confirmation_limits","microbiology_test",0,0,1,0,1,"culture confirmation limits","auto_keyword",1,0,0,0.645161290322581
+"176","culture_confirmed_eons_72_h","microbiology_test",0,0,0,1,1,"Culture-confirmed EONS -72-h","auto_keyword",1,0,0,0
+"177","culture_contamination","study_bias",0,0,1,0,1,"Culture contamination","auto_keyword",1,0,0,0.645161290322581
+"178","culture_limitations","study_bias",0,0,1,0,1,"culture limitations","auto_keyword",1,0,0,0.645161290322581
+"179","cultureconfirmed_clinical_eons","microbiology_test",0,0,0,1,1,"Cultureconfirmed / clinical EONS","auto_keyword",1,0,0,0
+"180","culturepositive_infection_in_mas","microbiology_test",0,0,0,1,1,"Culturepositive infection in MAS","auto_keyword",1,0,0,0
+"181","cutoff_choice","measurement_bias",0,0,1,0,1,"Cutoff choice","auto_keyword",1,0,0,0.645161290322581
+"182","data_quality","study_bias",0,0,1,0,1,"data quality","manual_override_raw_clean",1,0,0,0.645161290322581
+"183","database_missing_data","study_bias",0,0,1,0,1,"Database missing data","auto_keyword",1,0,0,0.645161290322581
+"184","dataset_heterogeneity","study_bias",0,0,1,0,1,"Dataset heterogeneity","auto_keyword",1,0,0,0.645161290322581
+"185","deep_breathing","clinical_sign",1,0,0,0,1,"deep breathing","manual_override_raw_clean",1,0.645161290322581,0,0
+"186","demographic_factors","imaging",1,0,0,0,1,"demographic factors","auto_keyword",1,0.645161290322581,0,0
+"187","desaturation","clinical_sign",1,0,0,0,1,"desaturation","auto_keyword",1,0.645161290322581,0,0
+"188","detection_limits","imaging",0,0,1,0,1,"detection limits","auto_keyword",1,0,0,0.645161290322581
+"189","dexamethasone","treatment",1,0,0,0,1,"dexamethasone","manual_override_raw_clean",1,0.645161290322581,0,0
+"190","diagnostic_misclassification","study_bias",0,0,1,0,1,"Diagnostic misclassification","auto_keyword",1,0,0,0.645161290322581
+"191","diarrhoea","clinical_sign",0,0,0,1,1,"diarrhoea","manual_override_raw_clean",1,0,0,0
+"192","dic_score_components","clinical_sign",1,0,0,0,1,"DIC score components","final manual patch",1,0.645161290322581,0,0
+"193","disease_severity_category","outcome",0,0,0,1,1,"Disease severity category","auto_keyword",1,0,0,0
+"194","dni","lab_biomarker",1,0,0,0,1,"DNI","manual_override_raw_clean",1,0.645161290322581,0,0
+"195","duration_cpap_oxygen","treatment",1,0,0,0,1,"duration CPAP oxygen","auto_keyword",1,0.645161290322581,0,0
+"196","early_or_late_onset_neonatal_sepsis","outcome",0,0,0,1,1,"early/late","final manual patch",1,0,0,0
+"197","emr_data_quality","study_bias",0,0,1,0,1,"EMR data quality","manual_override_raw_clean",1,0,0,0.645161290322581
+"198","esr","lab_biomarker",1,0,0,0,1,"ESR","auto_keyword",1,0.645161290322581,0,0
+"199","estimated_gfr_accuracy_vs_inulin","measurement_bias",0,0,0,1,1,"Estimated GFR accuracy vs inulin","manual_override_raw_clean",1,0,0,0
+"200","ev71","microbiology_test",1,0,0,0,1,"EV71","auto_keyword",1,0.645161290322581,0,0
+"201","evolving_protocols","study_bias",0,0,1,0,1,"evolving protocols","final manual patch",1,0,0,0.645161290322581
+"202","exhaled_hs_concentration_ppb","derived_ratio",1,0,0,0,1,"Exhaled HS concentration (ppb)","auto_keyword",1,0.645161290322581,0,0
+"203","expression_of_mybl1","molecular_omics",1,0,0,0,1,"Expression of MYBL1","auto_keyword",1,0.645161290322581,0,0
+"204","facility_delivery","demographic",1,0,0,0,1,"facility delivery","manual_override_raw_clean",1,0.645161290322581,0,0
+"205","fever_39c","clinical_sign",1,0,0,0,1,"fever 39C","auto_keyword",1,0.645161290322581,0,0
+"206","fever_grade","clinical_sign",1,0,0,0,1,"fever grade","auto_keyword",1,0.645161290322581,0,0
+"207","fibrogen_admisson_categories","lab_biomarker_general",1,0,0,0,1,"Admission fibrinogen categories","final manual patch",1,0.645161290322581,0,0
+"208","g_bacteria_vs_g_pathogens","microbiology_test",1,0,0,0,1,"G bacteria vs G pathogens","auto_keyword",1,0.645161290322581,0,0
+"209","gene_expression_of_rgl4_atp9a_map3k7cl_ddx11l2","molecular_omics",1,0,0,0,1,"Gene expression of RGL4, ATP9A, MAP3K7CL, DDX11L2","auto_keyword",1,0.645161290322581,0,0
+"210","gestational_factors","imaging",1,0,0,0,1,"gestational factors","auto_keyword",1,0.645161290322581,0,0
+"211","gnpda2","molecular_omics",1,0,0,0,1,"GNPDA2","manual_override_raw_clean",1,0.645161290322581,0,0
+"212","gut_microbiota_otus_clostridium_perfringens_klebsiella","clinical_condition",1,0,0,0,1,"Gut microbiota OTUs (Clostridium perfringens, Klebsiella)","auto_keyword",1,0.645161290322581,0,0
+"213","gyg1","molecular_omics",1,0,0,0,1,"GYG1","manual_override_raw_clean",1,0.645161290322581,0,0
+"214","helminths","microbiology_test",1,0,0,0,1,"helminths","final manual patch",1,0.645161290322581,0,0
+"215","hladr","molecular_omics",1,0,0,0,1,"HLADR","manual_override_raw_clean",1,0.645161290322581,0,0
+"216","hospitalization","outcome",0,0,0,1,1,"hospitalization","auto_keyword",1,0,0,0
+"217","hospitalized_bronchiolitis_vs_healthy_controls","study_design_characteristic",0,0,0,1,1,"Hospitalized bronchiolitis vs healthy controls","final manual patch",1,0,0,0
+"218","hydrocephalus_following_bacterial_meningitis","clinical_condition",0,0,0,1,1,"Hydrocephalus following bacterial meningitis","auto_keyword",1,0,0,0
+"219","hypothermia","clinical_sign",1,0,0,0,1,"Hypothermia","auto_keyword",1,0.645161290322581,0,0
+"220","i_t_ratio","derived_ratio",1,0,0,0,1,"I/T ratio","auto_keyword",1,0.645161290322581,0,0
+"221","ifn_score","lab_biomarker",1,0,0,0,1,"IFN score","manual_override_raw_clean",1,0.645161290322581,0,0
+"222","igg_igm","lab_biomarker",1,0,0,0,1,"IgG, IgM","manual_override_raw_clean",1,0.645161290322581,0,0
+"223","il27","lab_biomarker",1,0,0,0,1,"Plasma IL27","final manual patch",1,0.645161290322581,0,0
+"224","il33","lab_biomarker",1,0,0,0,1,"IL33","auto_keyword",1,0.645161290322581,0,0
+"225","il8_inflammatory_cascade","molecular_omics",0,1,0,0,1,"IL-8 (inflammatory cascade)","final manual patch",1,0,0.645161290322581,0
+"226","il_6_testing_implementation","measurement_bias",1,0,0,0,1,"IL-6 testing implementation","manual_override_raw_clean",1,0.645161290322581,0,0
+"227","illness_severity_scores","outcome",0,0,0,1,1,"Illness severity scores","auto_keyword",1,0,0,0
+"228","immune_cell_infiltration_patterns","derived_ratio",0,1,0,0,1,"Immune-cell infiltration patterns","auto_keyword",1,0,0.645161290322581,0
+"229","immune_checkpoint_expression","molecular_omics",0,1,0,0,1,"Immune checkpoint expression","auto_keyword",1,0,0.645161290322581,0
+"230","immune_infiltration","derived_ratio",0,0,0,1,1,"immune infiltration","auto_keyword",1,0,0,0
+"231","immune_infiltration_patterns","derived_ratio",0,1,0,0,1,"Immune infiltration patterns","auto_keyword",1,0,0.645161290322581,0
+"232","immune_modulation_vitd","treatment",0,1,0,0,1,"Immune modulation by vitamin D","final manual patch",1,0,0.645161290322581,0
+"233","improved_vs_unimproved_housing_features","demographic",1,0,0,0,1,"Improved vs unimproved housing features","manual_override_raw_clean",1,0.645161290322581,0,0
+"234","imputation_bias","study_bias",0,0,1,0,1,"imputation bias","auto_keyword",1,0,0,0.645161290322581
+"235","incident_physiciandiagnosed_respiratory_infections","imaging",0,0,0,1,1,"Incident physiciandiagnosed respiratory infections","auto_keyword",1,0,0,0
+"236","incomplete_cultures","microbiology_test",0,0,1,0,1,"incomplete cultures","auto_keyword",1,0,0,0.645161290322581
+"237","incomplete_follow_up","study_bias",0,0,1,0,1,"incomplete follow-up","auto_keyword",1,0,0,0.645161290322581
+"238","infant_clinical_indicators","clinical_sign",1,0,0,0,1,"infant clinical indicators","final manual patch",1,0.645161290322581,0,0
+"239","infection_type","imaging",1,0,0,0,1,"infection type","auto_keyword",1,0.645161290322581,0,0
+"240","inflammatory_elevation","lab_biomarker",0,0,1,0,1,"inflammatory elevation","final manual patch",1,0,0,0.645161290322581
+"241","inflammatory_protein_mediators","molecular_omics",1,0,0,0,1,"inflammatory protein mediators","final manual patch",1,0.645161290322581,0,0
+"242","intervention_effects","imaging",0,0,1,0,1,"intervention effects","auto_keyword",1,0,0,0.645161290322581
+"243","intrapartum_risk_factors","imaging",1,0,0,0,1,"Intrapartum risk factors","auto_keyword",1,0.645161290322581,0,0
+"244","invasive_bacterial_infection","imaging",0,0,0,1,1,"Invasive bacterial infection","auto_keyword",1,0,0,0
+"245","invasive_bacterial_infection_bacteremia_meningitis","clinical_condition",0,0,0,1,1,"Invasive bacterial infection (bacteremia/meningitis)","auto_keyword",1,0,0,0
+"246","invasive_bacterial_infection_culturepositive","microbiology_test",0,0,0,1,1,"Invasive bacterial infection (culturepositive)","auto_keyword",1,0,0,0
+"247","invasive_fungal_disease","clinical_condition",0,0,0,1,1,"Invasive fungal disease","final manual patch",1,0,0,0
+"248","iron_deficiency_ferritin_tsat_hepcidin_stfr","lab_biomarker",1,0,0,0,1,"Iron deficiency (ferritin, TSAT), hepcidin, sTfR","auto_keyword",1,0.645161290322581,0,0
+"249","iron_status_transferrin_receptor_anemia_ferritin","lab_biomarker",1,0,0,0,1,"Iron status (transferrin receptor, anemia, ferritin)","auto_keyword",1,0.645161290322581,0,0
+"250","ivig_resistance","treatment",0,0,0,1,1,"IVIG resistance","auto_keyword",1,0,0,0
+"251","ivigresistant_kawasaki_disease","clinical_condition",0,0,0,1,1,"IVIGresistant Kawasaki disease","auto_keyword",1,0,0,0
+"252","klrg1","molecular_omics",1,0,0,0,1,"KLRG1","auto_keyword",1,0.645161290322581,0,0
+"253","lab_availability","study_bias",0,0,1,0,1,"lab availability","manual_override_raw_clean",1,0,0,0.645161290322581
+"254","laboratory_timing","measurement_bias",0,0,1,0,1,"laboratory timing","auto_keyword",1,0,0,0.645161290322581
+"255","lack_of_longitudinal_follow_up","study_bias",0,0,1,0,1,"lack of longitudinal follow-up","auto_keyword",1,0,0,0.645161290322581
+"256","lar","derived_ratio",1,0,0,0,1,"LAR","manual_override_raw_clean",1,0.645161290322581,0,0
+"257","late_onset_sepsis_among_neonates_with_pneumonia","clinical_condition",0,0,0,1,1,"Late-onset sepsis among neonates with pneumonia","auto_keyword",1,0,0,0
+"258","latent_tb_infection_igra","imaging",0,0,0,1,1,"Latent TB infection (IGRA)","auto_keyword",1,0,0,0
+"259","lateonset_neonatal_sepsis_diagnosis","clinical_condition",0,0,0,1,1,"Lateonset neonatal sepsis diagnosis","auto_keyword",1,0,0,0
+"260","lateonset_sepsis_diagnosis","clinical_condition",0,0,0,1,1,"Lateonset sepsis diagnosis","auto_keyword",1,0,0,0
+"261","laz_4","nutrition",1,0,0,0,1,"LAZ < -4","auto_keyword",1,0.645161290322581,0,0
+"262","ldh","lab_biomarker",1,0,0,0,1,"LDH","manual_override_raw_clean",1,0.645161290322581,0,0
+"263","ldh_albumin_ratio","derived_ratio",1,0,0,0,1,"LDH/albumin ratio on admission","final manual patch",1,0.645161290322581,0,0
+"264","length_of_ventilation","outcome",0,0,0,1,1,"length of ventilation","auto_keyword",1,0,0,0
+"265","leukopenia","lab_biomarker",1,0,0,0,1,"leukopenia","manual_override_raw_clean",1,0.645161290322581,0,0
+"266","limited_controls","study_bias",0,0,1,0,1,"limited controls","manual_override_raw_clean",1,0,0,0.645161290322581
+"267","limited_culture_confirmation","microbiology_test",0,0,1,0,1,"Limited culture confirmation","auto_keyword",1,0,0,0.645161290322581
+"268","limited_culture_exclusion","microbiology_test",0,0,1,0,1,"limited culture exclusion","auto_keyword",1,0,0,0.645161290322581
+"269","limited_followup","study_bias",0,0,1,0,1,"limited followup","auto_keyword",1,0,0,0.645161290322581
+"270","limited_viral_targets","microbiology_test",0,0,1,0,1,"Limited viral targets","auto_keyword",1,0,0,0.645161290322581
+"271","limited_virology","study_bias",0,0,1,0,1,"limited virology","manual_override_raw_clean",1,0,0,0.645161290322581
+"272","loc728401","molecular_omics",1,0,0,0,1,"LOC728401","auto_keyword",1,0.645161290322581,0,0
+"273","loss_to_follow_up","outcome",0,0,1,0,1,"Loss to follow-up","auto_keyword",1,0,0,0.645161290322581
+"274","loss_to_followup","outcome",0,0,1,0,1,"Loss to followup","auto_keyword",1,0,0,0.645161290322581
+"275","low_culturepositive_cases","microbiology_test",0,0,1,0,1,"Low culturepositive cases","auto_keyword",1,0,0,0.645161290322581
+"276","low_incidence_of_bsi","clinical_condition",0,0,1,0,1,"Low incidence of BSI","auto_keyword",1,0,0,0.645161290322581
+"277","low_leukopenia_prevalence","study_bias",0,0,1,0,1,"low leukopenia prevalence","final manual patch",1,0,0,0.645161290322581
+"278","low_sensitivity","measurement_bias",0,0,1,0,1,"low sensitivity","manual_override_raw_clean",1,0,0,0.645161290322581
+"279","malnutrition","nutrition",1,0,0,0,1,"Malnutrition","auto_keyword",1,0.645161290322581,0,0
+"280","matching_residual_confounding","study_bias",0,0,1,0,1,"Matching residual confounding","auto_keyword",1,0,0,0.645161290322581
+"281","maternal_abortions","demographic",1,0,0,0,1,"maternal abortions","auto_keyword",1,0.645161290322581,0,0
+"282","maternal_anthropometrics","demographic",1,0,0,0,1,"maternal anthropometrics","auto_keyword",1,0.645161290322581,0,0
+"283","maternal_antibiotics_effect","treatment",0,0,1,0,1,"Maternal antibiotics effect","auto_keyword",1,0,0,0.645161290322581
+"284","maternal_education","demographic",1,0,0,0,1,"maternal education","auto_keyword",1,0.645161290322581,0,0
+"285","maternal_risk_factors","demographic",1,0,0,0,1,"Maternal risk factors","auto_keyword",1,0.645161290322581,0,0
+"286","metabolic_markers","molecular_omics",0,1,0,0,1,"Metabolic markers","auto_keyword",1,0,0.645161290322581,0
+"287","mettl7b","molecular_omics",1,0,0,0,1,"METTL7B","manual_override_raw_clean",1,0.645161290322581,0,0
+"288","microesr","lab_biomarker",1,0,0,0,1,"microESR","auto_keyword",1,0.645161290322581,0,0
+"289","minimum_acceptable_diet","nutrition",1,0,0,0,1,"minimum acceptable diet","auto_keyword",1,0.645161290322581,0,0
+"290","minimum_dietary_diversity","nutrition",1,0,0,0,1,"minimum dietary diversity","auto_keyword",1,0.645161290322581,0,0
+"291","mir1","molecular_omics",1,0,0,0,1,"miR1","auto_keyword",1,0.645161290322581,0,0
+"292","mir124","molecular_omics",1,0,0,0,1,"miR124","auto_keyword",1,0.645161290322581,0,0
+"293","mir23b_plasma_levels","molecular_omics",1,0,0,0,1,"miR23b plasma levels","auto_keyword",1,0.645161290322581,0,0
+"294","mir34a","molecular_omics",1,0,0,0,1,"miR34a","auto_keyword",1,0.645161290322581,0,0
+"295","misclassification","study_bias",0,0,1,0,1,"misclassification","auto_keyword",1,0,0,0.645161290322581
+"296","misclassification_of_nts_cases","study_bias",0,0,1,0,1,"Misclassification of NTS cases","auto_keyword",1,0,0,0.645161290322581
+"297","missing_data","study_bias",0,0,1,0,1,"Missing data","auto_keyword",1,0,0,0.645161290322581
+"298","missing_data_exclusions","study_bias",0,0,1,0,1,"missing data exclusions","auto_keyword",1,0,0,0.645161290322581
+"299","missing_labs","study_bias",0,0,1,0,1,"missing labs","auto_keyword",1,0,0,0.645161290322581
+"300","missing_outpatient_data","study_bias",0,0,1,0,1,"missing outpatient data","auto_keyword",1,0,0,0.645161290322581
+"301","missing_values","study_bias",0,0,1,0,1,"missing values","auto_keyword",1,0,0,0.645161290322581
+"302","missingdata_imputation","study_bias",0,0,1,0,1,"missingdata imputation","auto_keyword",1,0,0,0.645161290322581
+"303","missingness_imputed","study_bias",0,0,1,0,1,"missingness imputed","auto_keyword",1,0,0,0.645161290322581
+"304","monocyte_distribution_width","lab_biomarker",1,0,0,0,1,"Monocyte distribution width","final manual patch",1,0.645161290322581,0,0
+"305","monocytes_greater_than_6.5_percent","lab_biomarker",1,0,0,0,1,"monocytes>6.5%","final manual patch",1,0.645161290322581,0,0
+"306","monocytes_gt_6_5_percent","lab_biomarker",1,0,0,0,1,"monocytes>6.5%","final manual patch",1,0.645161290322581,0,0
+"307","mr_pleiotropy","study_bias",0,0,1,0,1,"MR pleiotropy","manual_override_raw_clean",1,0,0,0.645161290322581
+"308","mrproadm","lab_biomarker",1,0,0,0,1,"MRproADM","manual_override_raw_clean",1,0.645161290322581,0,0
+"309","ms4a4a","molecular_omics",1,0,0,0,1,"MS4A4A","manual_override_raw_clean",1,0.645161290322581,0,0
+"310","mycoplasma_pneumoniae_pneumonia_vs_healthy_infectious_controls","study_design_characteristic",0,0,0,1,1,"Mycoplasma pneumoniae pneumonia vs healthy/infectious controls","final manual patch",1,0,0,0
+"311","need_for_highflow_oxygen_cpap","treatment",0,0,0,1,1,"Need for highflow oxygen/CPAP","auto_keyword",1,0,0,0
+"312","need_for_picu_vs_ward_outpatient_care_among_sepsis_cases","outcome",0,0,0,1,1,"Need for PICU vs ward/outpatient care among sepsis cases","final manual patch",1,0,0,0
+"313","need_for_respiratory_support","treatment",0,0,0,1,1,"Need for respiratory support","auto_keyword",1,0,0,0
+"314","neonatal_sepsis_diagnostic_risk_score","clinical_condition",0,0,0,1,1,"Neonatal sepsis diagnostic risk score","auto_keyword",1,0,0,0
+"315","neonatal_sepsis_vs_control_status","study_design_characteristic",0,0,0,1,1,"Neonatal sepsis vs control status","final manual patch",1,0,0,0
+"316","neonatal_sepsis_vs_control_transcriptomic","study_design_characteristic",0,0,0,1,1,"Neonatal sepsis vs control (transcriptomic)","final manual patch",1,0,0,0
+"317","neurocognitive_scores_over_24_months","outcome",0,0,0,1,1,"neurocognitive scores over 24-months","auto_keyword",1,0,0,0
+"318","neurologic_disability_at_discharge","outcome",0,0,0,1,1,"neurologic disability at discharge","auto_keyword",1,0,0,0
+"319","neutrophils","lab_biomarker",1,0,0,0,1,"neutrophils","auto_keyword",1,0.645161290322581,0,0
+"320","no_bleeding_endpoints","study_bias",0,0,1,0,1,"No bleeding endpoints","final manual patch",1,0,0,0.645161290322581
+"321","no_validation","study_bias",0,0,1,0,1,"no validation","auto_keyword",1,0,0,0.645161290322581
+"322","nonstandard_saliva_sampling","study_bias",0,0,1,0,1,"Nonstandard saliva sampling","auto_keyword",1,0,0,0.645161290322581
+"323","nsun7","molecular_omics",1,0,0,0,1,"NSUN7","manual_override_raw_clean",1,0.645161290322581,0,0
+"324","nutrition","nutrition",1,0,0,0,1,"nutrition","auto_keyword",1,0.645161290322581,0,0
+"325","nutritional_confounders","nutrition",0,0,1,0,1,"Nutritional confounders","auto_keyword",1,0,0,0.645161290322581
+"326","nutritional_confounding","study_bias",0,0,1,0,1,"Nutritional confounding","auto_keyword",1,0,0,0.645161290322581
+"327","olfm4","lab_biomarker",1,0,0,0,1,"% OLFM4 neutrophils","final manual patch",1,0.645161290322581,0,0
+"328","outcome_prediction","imaging",0,0,0,1,1,"outcome prediction","auto_keyword",1,0,0,0
+"329","par","lab_biomarker",1,0,0,0,1,"PAR","manual_override_raw_clean",1,0.645161290322581,0,0
+"330","pathogen_distribution","microbiology_test",0,0,0,1,1,"pathogen distribution","final manual patch",1,0,0,0
+"331","pathway_gene_scores_pik3ca_tgfbr2_kras_etc","molecular_omics",1,0,0,0,1,"Pathway gene scores (PIK3CA, TGFBR2, KRAS etc.)","auto_keyword",1,0.645161290322581,0,0
+"332","pct_guided_antibiotic_algorithm","treatment",1,0,0,0,1,"PCTguided antibiotic algorithms","final manual patch",1,0.645161290322581,0,0
+"333","pdw","lab_biomarker",1,0,0,0,1,"PDW","manual_override_raw_clean",1,0.645161290322581,0,0
+"334","pediatric_sepsis_diagnosis","clinical_condition",0,0,0,1,1,"Pediatric sepsis diagnosis","auto_keyword",1,0,0,0
+"335","pediatric_sepsis_vs_healthy_status","study_design_characteristic",0,0,0,1,1,"Pediatric sepsis vs healthy status","final manual patch",1,0,0,0
+"336","perfusion_signs","clinical_sign",1,0,0,0,1,"perfusion signs","manual_override_raw_clean",1,0.645161290322581,0,0
+"337","perinatal_factors","imaging",1,0,0,0,1,"perinatal factors","auto_keyword",1,0.645161290322581,0,0
+"338","peripheral_vegfa","lab_biomarker",1,0,0,0,1,"peripheral VEGFA","auto_keyword",1,0.645161290322581,0,0
+"339","ph","lab_biomarker",1,0,0,0,1,"pH","manual_override_raw_clean",1,0.645161290322581,0,0
+"340","pic","lab_biomarker",1,0,0,0,1,"PIC","manual_override_raw_clean",1,0.645161290322581,0,0
+"341","picu_admission","outcome",0,0,0,1,1,"PICU admission","final manual patch",1,0,0,0
+"342","picu_stay_length","outcome",1,0,0,0,1,"PICU stay length","final manual patch",1,0.645161290322581,0,0
+"343","placenta_changes","clinical_sign",1,0,0,0,1,"placenta changes","final manual patch",1,0.645161290322581,0,0
+"344","plasma_chi3l1_levels","lab_biomarker",1,0,0,0,1,"Plasma CHI3L1 levels (daily for 4-days)","final manual patch",1,0.645161290322581,0,0
+"345","plasma_metab_glyc_sphing","molecular_omics",1,0,0,0,1,"Plasma metabolite panel (glycerophospholipids, sphingolipids)","final manual patch",1,0.645161290322581,0,0
+"346","plasma_tau_concentration_at_admission","lab_biomarker",1,0,0,0,1,"Plasma tau concentration at admission","auto_keyword",1,0.645161290322581,0,0
+"347","plasma_viremia_for_adv_enterovirus_parechovirus_hhv_6","microbiology_test",1,0,0,0,1,"Plasma viremia for AdV, Enterovirus, Parechovirus, HHV-6","auto_keyword",1,0.645161290322581,0,0
+"348","platelet_indices","lab_biomarker",1,0,0,0,1,"Platelet indices","auto_keyword",1,0.645161290322581,0,0
+"349","pmnl","lab_biomarker",1,0,0,0,1,"PMNL %","auto_keyword",1,0.645161290322581,0,0
+"350","pneumococcal_pcr","microbiology_test",1,0,0,0,1,"pneumococcal PCR","auto_keyword",1,0.645161290322581,0,0
+"351","pni_52_4","derived_ratio",1,0,0,0,1,"PNI 52.4","auto_keyword",1,0.645161290322581,0,0
+"352","possible_contamination","study_bias",0,0,1,0,1,"Possible CoNS contamination","final manual patch",1,0,0,0.645161290322581
+"353","postcardiacsurgery_infection_pod4","imaging",0,0,0,1,1,"Postcardiacsurgery infection (POD4)","auto_keyword",1,0,0,0
+"354","potential_confounding","study_bias",0,0,1,0,1,"potential confounding","auto_keyword",1,0,0,0.645161290322581
+"355","practice_changes","imaging",0,0,1,0,1,"Practice changes","auto_keyword",1,0,0,0.645161290322581
+"356","practice_changes_over_6_years","imaging",0,0,1,0,1,"Practice changes over 6 years","auto_keyword",1,0,0,0.645161290322581
+"357","presence_and_trajectory_of_sepsis","clinical_condition",0,0,0,1,1,"Presence and trajectory of sepsis","auto_keyword",1,0,0,0
+"358","pretermterm_mix","study_bias",0,0,1,0,1,"pretermterm mix","manual_override_raw_clean",1,0,0,0.645161290322581
+"359","prior_antibiotics","treatment",1,0,0,0,1,"prior antibiotics","auto_keyword",1,0.645161290322581,0,0
+"360","prior_episodes","clinical_condition",1,0,0,0,1,"prior episodes","final manual patch",1,0.645161290322581,0,0
+"361","prkacb","molecular_omics",1,0,0,0,1,"PRKACB","auto_keyword",1,0.645161290322581,0,0
+"362","progression_from_sepsis_to_severe_sepsis","clinical_condition",0,0,0,1,1,"Progression from sepsis to severe sepsis","auto_keyword",1,0,0,0
+"363","progression_to_severe_disease_within_30days","outcome",0,0,0,1,1,"Progression to severe disease within 30days","auto_keyword",1,0,0,0
+"364","prom","clinical_condition",1,0,0,0,1,"PROM","manual_override_raw_clean",1,0.645161290322581,0,0
+"365","prom_confounding","study_bias",0,0,1,0,1,"PROM confounding","final manual patch",1,0,0,0.645161290322581
+"366","pros1","molecular_omics",1,0,0,0,1,"PROS1","auto_keyword",1,0.645161290322581,0,0
+"367","protein_microarray_autoantibodies","molecular_omics",1,0,0,0,1,"Protein microarray of 9345 autoantibodies (8 selected)","final manual patch",1,0.645161290322581,0,0
+"368","recall_bias","study_bias",0,0,1,0,1,"Recall bias","auto_keyword",1,0,0,0.645161290322581
+"369","recent_fever","clinical_sign",0,0,0,1,1,"fever in past 2weeks","final manual patch",1,0,0,0
+"370","refractory_suppurative_meningitis_vs_common","clinical_condition",0,0,0,1,1,"Refractory suppurative meningitis vs common","auto_keyword",1,0,0,0
+"371","registry_heterogeneity","study_bias",0,0,1,0,1,"Registry heterogeneity","auto_keyword",1,0,0,0.645161290322581
+"372","regression_scores","clinical_sign",1,0,0,0,1,"regressionbased scores","final manual patch",1,0.645161290322581,0,0
+"373","renal_ischemia","clinical_condition",0,1,0,0,1,"Renal ischemia","manual_override_raw_clean",1,0,0.645161290322581,0
+"374","renal_urological_history","clinical_condition",1,0,0,0,1,"Renal/urological history","final manual patch",1,0.645161290322581,0,0
+"375","residual_socioeconomic_confounding","study_bias",0,0,1,0,1,"Residual socioeconomic confounding","auto_keyword",1,0,0,0.645161290322581
+"376","resource_limitations","study_bias",0,0,1,0,1,"Resource limitations","auto_keyword",1,0,0,0.645161290322581
+"377","respiratory_failure","clinical_condition",0,0,0,1,1,"Development of respiratory failure","manual_regex",1,0,0,0
+"378","retn","lab_biomarker",1,0,0,0,1,"RETN","manual_override_raw_clean",1,0.645161290322581,0,0
+"379","retn_gene_expression","molecular_omics",1,0,0,0,1,"RETN gene expression","final manual patch",1,0.645161290322581,0,0
+"380","retrospective_biases","study_bias",0,0,1,0,1,"Retrospective biases","auto_keyword",1,0,0,0.645161290322581
+"381","retrospective_microarray_limitations","study_bias",0,0,1,0,1,"retrospective microarray limitations","auto_keyword",1,0,0,0.645161290322581
+"382","retrospective_record_limits","imaging",0,0,1,0,1,"Retrospective record limits","auto_keyword",1,0,0,0.645161290322581
+"383","retrospective_sampling","study_bias",0,0,1,0,1,"retrospective sampling","auto_keyword",1,0,0,0.645161290322581
+"384","retrospective_selection","study_bias",0,0,1,0,1,"Retrospective selection","auto_keyword",1,0,0,0.645161290322581
+"385","sample_handling","measurement_bias",0,0,1,0,1,"Sample handling","auto_keyword",1,0,0,0.645161290322581
+"386","sampling_error","study_bias",0,0,1,0,1,"sampling error","auto_keyword",1,0,0,0.645161290322581
+"387","seasonality","demographic",0,0,1,0,1,"Seasonality","final manual patch",1,0,0,0.645161290322581
+"388","secondary_analysis","study_bias",0,0,1,0,1,"Secondary analysis","final manual patch",1,0,0,0.645161290322581
+"389","secondary_invasive_bacterial_infection","imaging",0,0,0,1,1,"secondary invasive bacterial infection","auto_keyword",1,0,0,0
+"390","selfreport_bias","study_bias",0,0,1,0,1,"selfreport bias","auto_keyword",1,0,0,0.645161290322581
+"391","sensitivity_limitations","study_bias",0,0,1,0,1,"Sensitivity limitations","auto_keyword",1,0,0,0.645161290322581
+"392","sepsis_diagnosis","clinical_condition",0,0,0,1,1,"Sepsis diagnosis","auto_keyword",1,0,0,0
+"393","sepsis_risk_prediction","clinical_condition",0,0,0,1,1,"Sepsis risk prediction","auto_keyword",1,0,0,0
+"394","sepsis_vs_control_vlbw_infants","study_design_characteristic",0,0,0,1,1,"Sepsis vs control (VLBW infants)","final manual patch",1,0,0,0
+"395","sepsis_vs_noninfectious_sirs","study_design_characteristic",0,0,0,1,1,"Sepsis vs noninfectious SIRS","final manual patch",1,0,0,0
+"396","sequencing_batch_effects","imaging",0,0,1,0,1,"sequencing batch effects","auto_keyword",1,0,0,0.645161290322581
+"397","serious_bacterial_infection_uti_bacteremia_meningitis","clinical_condition",0,0,0,1,1,"Serious bacterial infection (UTI, bacteremia, meningitis)","auto_keyword",1,0,0,0
+"398","serious_bacterial_infection_vs_viral_selflimited","microbiology_test",0,0,0,1,1,"Serious bacterial infection vs viral/selflimited","auto_keyword",1,0,0,0
+"399","serum_adamts13_level","lab_biomarker",1,0,0,0,1,"Serum ADAMTS13 level","manual_override_raw_clean",1,0.645161290322581,0,0
+"400","serum_amyloida_6h","lab_biomarker",1,0,0,0,1,"serum amyloidA 6h","auto_keyword",1,0.645161290322581,0,0
+"401","serum_apoa_v_level_on_admission","lab_biomarker",1,0,0,0,1,"Serum ApoA-V level on admission","final manual patch",1,0.645161290322581,0,0
+"402","serum_cxcr4_cxcl12_il6","lab_biomarker",1,0,0,0,1,"Serum CXCR4, CXCL12, IL6","auto_keyword",1,0.645161290322581,0,0
+"403","serum_cystatinc","lab_biomarker",1,0,0,0,1,"Serum cystatinC","auto_keyword",1,0.645161290322581,0,0
+"404","serum_dglucan","lab_biomarker",1,0,0,0,1,"serum Dglucan","manual_override_raw_clean",1,0.645161290322581,0,0
+"405","serum_ifn","lab_biomarker",1,0,0,0,1,"Serum IFN-","auto_keyword",1,0.645161290322581,0,0
+"406","serum_ige_categories","lab_biomarker",1,0,0,0,1,"Serum IgE categories","auto_keyword",1,0.645161290322581,0,0
+"407","serum_il18","lab_biomarker",1,0,0,0,1,"Serum IL18","auto_keyword",1,0.645161290322581,0,0
+"408","serum_il35","lab_biomarker",1,0,0,0,1,"Serum IL35","auto_keyword",1,0.645161290322581,0,0
+"409","serum_il6_il10_ifn_thresholds","lab_biomarker",1,0,0,0,1,"Serum IL6, IL10, IFN thresholds","auto_keyword",1,0.645161290322581,0,0
+"410","serum_il6_il10_tnf_ifn","lab_biomarker",1,0,0,0,1,"Serum IL6, IL10, TNF, IFN","auto_keyword",1,0.645161290322581,0,0
+"411","serum_metab_55","molecular_omics",1,0,0,0,1,"Serum metabolite panel (55 metabolites)","final manual patch",1,0.645161290322581,0,0
+"412","serum_progranulin","lab_biomarker",1,0,0,0,1,"Serum progranulin","auto_keyword",1,0.645161290322581,0,0
+"413","serum_tat","lab_biomarker",1,0,0,0,1,"Serum TAT","manual_override_raw_clean",1,0.645161290322581,0,0
+"414","severe_hfmd","clinical_condition",0,0,0,1,1,"Severe HFMD","auto_keyword",1,0,0,0
+"415","severe_versus_mild_hfmd","clinical_condition",0,0,0,1,1,"Severe versus mild HFMD","auto_keyword",1,0,0,0
+"416","severe_versus_moderate_covid_19","clinical_condition",0,0,0,1,1,"Severe versus moderate COVID-19","auto_keyword",1,0,0,0
+"417","severe_vs_mild_hfmd","clinical_condition",0,0,0,1,1,"Severe vs mild HFMD","auto_keyword",1,0,0,0
+"418","severity_scores","outcome",1,0,0,0,1,"severity scores","auto_keyword",1,0.645161290322581,0,0
+"419","severity_subgroup","outcome",0,0,0,1,1,"severity subgroup","auto_keyword",1,0,0,0
+"420","single_institution","study_bias",0,0,1,0,1,"single institution","final manual patch",1,0,0,0.645161290322581
+"421","site_heterogeneity","study_bias",0,0,1,0,1,"Site heterogeneity","auto_keyword",1,0,0,0.645161290322581
+"422","small_public_datasets","study_bias",0,0,1,0,1,"small public datasets","auto_keyword",1,0,0,0.645161290322581
+"423","small_validation_cohort","study_bias",0,0,1,0,1,"Small validation cohort","auto_keyword",1,0,0,0.645161290322581
+"424","snp_instruments","molecular_omics",1,0,0,0,1,"SNP instruments","manual_override_raw_clean",1,0.645161290322581,0,0
+"425","sodium","lab_biomarker",1,0,0,0,1,"sodium","manual_override_raw_clean",1,0.645161290322581,0,0
+"426","stom","clinical_condition",1,0,0,0,1,"STOM","manual_override_raw_clean",1,0.645161290322581,0,0
+"427","stunting","nutrition",0,0,0,1,1,"stunting","auto_keyword",1,0,0,0
+"428","stunting_haz_2","nutrition",0,0,0,1,1,"Stunting (HAZ<2)","auto_keyword",1,0,0,0
+"429","subset_assay","measurement_bias",0,0,1,0,1,"Subset assay","auto_keyword",1,0,0,0.645161290322581
+"430","subtype_stratification","study_bias",0,0,0,1,1,"subtype stratification","final manual patch",1,0,0,0
+"431","supar","lab_biomarker",1,0,0,0,1,"Serial suPAR levels","final manual patch",1,0.645161290322581,0,0
+"432","tb_contact","imaging",1,0,0,0,1,"TB contact","auto_keyword",1,0.645161290322581,0,0
+"433","tdrd9","molecular_omics",1,0,0,0,1,"TDRD9","auto_keyword",1,0.645161290322581,0,0
+"434","temperature","clinical_sign",1,0,0,0,1,"temperature","manual_regex",1,0.645161290322581,0,0
+"435","tgfbi_expression","molecular_omics",1,0,0,0,1,"TGFBI expression","auto_keyword",1,0.645161290322581,0,0
+"436","thrombocytopenia","clinical_condition",1,0,0,0,1,"thrombocytopenia","auto_keyword",1,0.645161290322581,0,0
+"437","tpaic_levels","lab_biomarker",1,0,0,0,1,"tPAIC levels","manual_override_raw_clean",1,0.645161290322581,0,0
+"438","trem1","lab_biomarker",1,0,0,0,1,"TREM1","auto_keyword",1,0.645161290322581,0,0
+"439","two_week_prevalence_of_fever_and_or_diarrhea","clinical_sign",0,0,0,1,1,"Two-week prevalence of fever and/or diarrhea","auto_keyword",1,0,0,0
+"440","underweight","nutrition",0,0,0,1,1,"underweight","auto_keyword",1,0,0,0
+"441","unmeasured_comorbidities","study_bias",0,0,1,0,1,"unmeasured comorbidities","manual_override_raw_clean",1,0,0,0.645161290322581
+"442","unplanned_readmission_within_12months","outcome",0,0,0,1,1,"Unplanned readmission within 12months","auto_keyword",1,0,0,0
+"443","uti","clinical_condition",0,0,0,1,1,"UTI","auto_keyword",1,0,0,0
+"444","ventilatory_support","treatment",1,0,0,0,1,"ventilatory support","manual_override_raw_clean",1,0.645161290322581,0,0
+"445","viral_pcr","microbiology_test",1,0,0,0,1,"viral PCR","auto_keyword",1,0.645161290322581,0,0
+"446","viral_vs_bacterial_infection_classification","microbiology_test",0,0,0,1,1,"Viral vs bacterial infection classification","auto_keyword",1,0,0,0
+"447","vur","clinical_condition",1,0,0,0,1,"VUR","manual_override_raw_clean",1,0.645161290322581,0,0
+"448","wash_factors","imaging",0,0,1,0,1,"WASH factors","auto_keyword",1,0,0,0.645161290322581
+"449","wasting","nutrition",0,0,0,1,1,"wasting","final manual patch",1,0,0,0
+"450","wealth_index","demographic",1,0,0,0,1,"Wealth index","manual_override_raw_clean",1,0.645161290322581,0,0
+"451","westley_score","clinical_sign",0,0,0,1,1,"Westley score 3","final manual patch",1,0,0,0
+"452","whole_blood_gene_expression_profiles","molecular_omics",1,0,0,0,1,"Whole-blood gene expression profiles","auto_keyword",1,0.645161290322581,0,0
+"453","yingyangbao","nutrition",1,0,0,0,1,"yingyangbao","manual_override_raw_clean",1,0.645161290322581,0,0
