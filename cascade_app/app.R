@@ -9,6 +9,7 @@ library(tidyverse)
 library(tidymodels)
 library(hardhat)
 library(DT)
+library(markdown)
 
 max_prob_class <- function(df, levels) {
   max_col_indices <- max.col(df, ties.method = "first")
