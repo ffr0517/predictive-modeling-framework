@@ -1,50 +1,49 @@
-# Two-Stage Machine Learning Framework to Support Early Detection of Severe Febrile Illness in Young Children (Code & Derived Artifacts)
+# Spot Sepsis Cascade
 
-**No raw data is included.**  
-This repository contains code, trained model artifacts (where permitted), derived tables, and an interactive mockup application for a two-stage cascade machine learning model to support the diagnosis of severe febrile illness.
+Code and derived artefacts for a two-stage machine learning cascade designed to support early severe-febrile-illness workflows in paediatric research settings.
 
-## Structure
-- `code/` — R scripts to build, evaluate, and analyse models; plus utilities for visualisation and reporting.
-- `models/` — Trained artifacts and feature-importance outputs (no identifiers).
-- `outputs/tables/` — Derived/supplementary tables (no raw or identifiable data).
-- `data-templates/` — Input template to reproduce workflows with your own data.
-- `docs/` — Protocols and PDFs (if included), redacted for anonymity.
-- `cascade_app/` — Shiny app providing an interactive interface to the cascade model (see **App User Guide** below).
+**No raw data is included.** This repository contains modelling code, trained artefacts where permitted, derived tables, templates, and a Shiny-based interactive mockup application.
 
-## Reproducibility (no data)
+## What is here
+
+- `code/` — R scripts for model building, evaluation, analysis, and reporting
+- `models/` — trained artefacts and feature-importance outputs without identifiers
+- `outputs/tables/` — derived and supplementary outputs without raw data
+- `data-templates/` — input templates for reproducing workflows with your own compatible data
+- `docs/` — redacted protocols, notes, and supporting PDFs
+- `cascade_app/` — Shiny app demonstrating the two-stage cascade workflow
+
+## Reproducibility
+
 To run the modelling workflows locally:
-1. Provide data matching `data-templates/input_data_template.csv` columns.
-2. Update scripts to use **relative paths**. Example:
-   ```r
-   # install.packages("here")
-   library(here)
-   template <- read.csv(here("data-templates", "input_data_template.csv"))
 
-# Cascade Model App – User Guide
+1. Provide data matching the schema in `data-templates/input_data_template.csv`.
+2. Update path handling to use relative paths. A typical pattern is:
 
-### 1. Purpose of the Application
-The `cascade_app` folder contains a Shiny application that demonstrates the two-stage cascade model. It enables:
-- **Stage 1**: Rapid triage using only minimal clinical data to identify low- and high-risk patients.
-- **Stage 2**: More resource-intensive, higher-accuracy modelling applied only to the Stage 1 high-risk subset.
+```r
+library(here)
 
-### 2. How to Use the App
-**Upload Data**  
-- *Clinical-Only Data*: `.csv` file containing `patient_id` and clinical predictors.  
-- *Full Lab Data*: `.csv` file containing clinical + laboratory data for the same patients.  
-- Use **Download Template** to obtain a `.csv` with all required column headers.
+template <- read.csv(here("data-templates", "input_data_template.csv"))
+```
 
-**Run Stage 1 Analysis**  
-- Click after uploading the clinical data.  
-- Results appear in “Stage 1 Results” with rows flagged (`handoff_recommended = TRUE`) for Stage 2.
+## Cascade App Guide
 
-**Run Stage 2 Analysis**  
-- Available only if patients are flagged in Stage 1.  
-- Runs the second model on the flagged subset using full data.  
-- Produces a “Final Compiled Report” with definitive predictions and their source.
+The `cascade_app/` folder contains a Shiny application that demonstrates the two-stage workflow.
 
-### 3. Interpreting the Final Report
-`prediction_source` indicates how the final result was determined:
-- **Stage 1 (Confident)** – Stage 1 model highly confident; no further analysis needed.  
-- **Stage 2** – Refined prediction from the second model using full data.  
-- **Stage 1 (Safeguard)** – Patient flagged as potentially severe in Stage 1; this prediction is retained regardless of Stage 2 outcome.
+### Purpose
 
+- **Stage 1** uses minimal clinical data to identify lower- and higher-risk patients.
+- **Stage 2** applies a more resource-intensive model to the Stage 1 subset that should be escalated.
+
+### Typical flow
+
+1. Upload a clinical-only `.csv` with `patient_id` and the required predictors.
+2. Upload a full-data `.csv` with clinical and laboratory inputs for the same patients.
+3. Run Stage 1 to identify rows where `handoff_recommended = TRUE`.
+4. Run Stage 2 on the flagged subset to produce a compiled final report.
+
+### Final report interpretation
+
+- **Stage 1 (Confident)** — Stage 1 was sufficiently confident to stand on its own.
+- **Stage 2** — the Stage 2 model produced the final prediction after escalation.
+- **Stage 1 (Safeguard)** — Stage 1 flagged a potentially severe case and that safeguard outcome is retained.
